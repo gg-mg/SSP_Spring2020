@@ -103,16 +103,16 @@ function fn_dayofWeek($day){
          $message= 'trans-night';
      break;
      case 6:
-         $message = 'take boys out';
+         $message = 'No School work: take my sons out to play';
      break;
      case 7:
-         $message = 'golf';
+         $message = 'No school work: golf';
      break;
     }
          return $message;
          
 }
- ;
+;
  function fn_dayTime($day){         
    
     if ($day == 1){

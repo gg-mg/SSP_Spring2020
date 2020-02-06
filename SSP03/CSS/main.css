@@ -11,16 +11,17 @@ Body: Background-color: #f0f8ff (alice blue)
     1.Main:
            1.1 Background: #FFF (white)
            1.2 Content: #000 (black)
-           1.3 Box-shadow: #008080(teal)
+           1.3 Box-shadow: #008080 (teal)
+           1.4 Table highlight: #ffff66(unmellow yellow)
     2.Header: 
-             h1 #008080(teal)                          
+             h1 #008080 (teal)                          
     3.Navigation: 
-                 3.1 nav ul li a:Background-color: #008000(green)
-                 3.2 nav ul li a: (standard): #ffffff(white)
+                 3.1 nav ul li a:Background-color: #008000 (green)
+                 3.2 nav ul li a: (standard): #ffffff (white)
                  3.3 a (visited): #40e0d0 (turquoise)
                  3.4 a (hover): #FF0000 (red)
     4.Footer:
-             #008080(teal)
+             #008080 (teal)
     5.Table:
             border-color #000 (black)
 
@@ -167,5 +168,6 @@ td {
     border: 1px solid;
     border-color: black;
 }
-#current{background-color: #ffff66;
+#current{
+    background-color: #ffff66;
 }

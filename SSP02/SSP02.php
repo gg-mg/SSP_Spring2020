@@ -18,7 +18,3 @@
 
     <?php include "PHP/include_footer.php";?>
     
-    
-</body>
-
-</html>
