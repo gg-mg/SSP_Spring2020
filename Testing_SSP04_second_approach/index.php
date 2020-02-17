@@ -2,7 +2,7 @@
 // Start the session
 session_start();
 
-
+include_once('./FUNCTIONS/functions_ssp04testing.php');
 // Set session variables
 
 if (!isset($_SESSION["secretWord"])) {
@@ -63,15 +63,17 @@ if (!isset($_SESSION["game_started"])) {
 
   
 print_r($secretWord_array);
+ echo '<br>' ;
+
 
 $guess_letter = filter_input(INPUT_POST, 'guess_letter');
 
-if (!empty($guess_letter)) {
+if (!empty($guess_letter && ctype_alpha($guess_letter))) {
     if (strpos($guess_tracked, $guess_letter) !== false) {
         $guess_count_wrong++;
         $guess_image ++;
-    } elseif (strcasecmp($secretWord, $guess_secretWord)==0) {
-        $game_status = "Congratulations !!!";
+    } elseif ($secretWord == $guess_secretWord) {
+        echo "Congratulations !!!";
         $game_end = true;
         reset_SESSION();
     } elseif (!in_array($guess_letter, $secretWord_array)) {
@@ -89,7 +91,12 @@ if (!empty($guess_letter)) {
             }
         }
     }
+} else {
+    echo '<b>Please enter a letter a to z</b>';
 }
+
+$frosty = "images/Frosty/SSP04_Frosty".$guess_image.".png";
+
 $guess_count++;
 $_SESSION["secretWord"] = $secretWord ;
 $_SESSION["secretWord_hint"] = $secretWord_hint ;
@@ -124,6 +131,8 @@ $_SESSION["game_started"] = $game_started ;
 
 <input type="submit" name="submit">    
 </form>
+<img src= "<?php echo $frosty ?>"  alt="Mr Frosty" style="float:right; border: 2px solid #ddd;" 
+width ="137" height ="135">
 
 <?php echo '<br>' ?>
 
@@ -133,9 +142,14 @@ $_SESSION["game_started"] = $game_started ;
 <p> Secret word length:  <?php echo $secretWord_len; ?></p>
 <p> Guess count:  <?php echo $guess_count ?></p>
 <p> Guessed letters:  <?php echo $guess_tracked; ?></p>
+
+
 <?php $temp = substr($guess_secretWord, 0); ?>
-<?php $temp = str_replace("_","",$temp); ?>
+<?php $temp = str_replace("_", "", $temp); ?>
 <?php echo $temp ?>
+<?php echo '<br>' ?>
+
+
 
 
 
