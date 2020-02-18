@@ -67,15 +67,16 @@ print_r($secretWord_array);
 
 
 $guess_letter = filter_input(INPUT_POST, 'guess_letter');
+$guess_count++;
 
 if (!empty($guess_letter && ctype_alpha($guess_letter))) {
     if (strpos($guess_tracked, $guess_letter) !== false) {
         $guess_count_wrong++;
         $guess_image ++;
-    } elseif ($secretWord == $guess_secretWord) {
+    } elseif ($secretWord === $guess_secretWord) {
         echo "Congratulations !!!";
-        $game_end = true;
-        reset_SESSION();
+        header("Refresh: 1");
+        session_destroy();
     } elseif (!in_array($guess_letter, $secretWord_array)) {
         $guess_tracked .=$guess_letter;
         $guess_count_wrong++;
@@ -95,9 +96,9 @@ if (!empty($guess_letter && ctype_alpha($guess_letter))) {
     echo '<b>Please enter a letter a to z</b>';
 }
 
-$frosty = "images/Frosty/SSP04_Frosty".$guess_image.".png";
+$frosty = "images/Frosty/SSP04_Frosty".($guess_image+1).".png";
 
-$guess_count++;
+
 $_SESSION["secretWord"] = $secretWord ;
 $_SESSION["secretWord_hint"] = $secretWord_hint ;
 $_SESSION["secretWord_array"] = $secretWord_array;
@@ -110,6 +111,19 @@ $_SESSION["guess_image"] = $guess_image ;
 $_SESSION["guess_letter"] = $guess_letter;
 $_SESSION["game_last_guess"] = $game_last_guess;
 $_SESSION["game_started"] = $game_started ;
+
+if ($secretWord == $guess_secretWord) {
+    echo '<p style="font-size: 3em;" > Congratulations!!!</p>';
+    header("Refresh: 1");
+    session_destroy();
+}
+
+if($guess_image >= 5){
+    header("Refresh: 1");
+   echo '<p style="font-size: 3em;" > Too many tries. The game will reset!!!</p>';
+    session_destroy();
+
+}
 
 ?>
 
