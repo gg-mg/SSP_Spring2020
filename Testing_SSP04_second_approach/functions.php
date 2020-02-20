@@ -32,4 +32,15 @@ function reset_SESSION(){
 }
 
 echo "found";
+
+?>
+
+<?php echo '<br>' ?>
+
+<?php echo  $guess_secretWord; ?>
+<?php echo '<br>' ?>
+<p> Secret word hint:  <?php echo $secretWord_hint; ?></p>
+<p> Secret word length:  <?php echo $secretWord_len; ?></p>
+<p> Guess count:  <?php echo $guess_count ?></p>
+<p> Guessed letters:  <?php echo $guess_tracked; ?></p>
 ?>

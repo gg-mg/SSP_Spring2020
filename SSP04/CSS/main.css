@@ -171,3 +171,14 @@ td {
 #current{
     background-color: #ffff66;
 }
+#frosty{
+    border: 3px solid #ffff00;
+    max-width: 400px;
+    max-height: 200px;
+} 
+#frostier{
+    padding: 1em;
+}
+#letterGuess{
+    padding : 2em;
+}
