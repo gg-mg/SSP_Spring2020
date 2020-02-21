@@ -87,8 +87,9 @@
         echo '<b>Please enter a letter a to z</b>';
     }
 
-    $frosty = "./images/Frosty/SSP04_Frosty".($guess_image).".png";    
-  
+    $frosty = "./images/Frosty/SSP04_Frosty".($guess_image).".png";
+    
+
 
     if ($secretWord == $guess_secretWord) {
         echo '<p style="font-size: 3em;" > Congratulations!!!</p>';
@@ -98,7 +99,7 @@
 
     if ($guess_image >= 6) {
         header("Refresh: 1");
-        echo '<p style="font-size: 3em;" > Too many tries. The game will reset!!!'.$secretWord.'</p>';
+        echo '<p style="font-size: 3em;" > Too many tries. The game will reset!!!</p>';
         session_destroy();
     }
 
@@ -115,7 +116,6 @@
     $_SESSION["game_last_guess"] = $game_last_guess;
     $_SESSION["game_started"] = $game_started ;   
     
-   
  
 ?>
 <!-- i would want to refresh the page on submit and get the value of guess_letter -->
