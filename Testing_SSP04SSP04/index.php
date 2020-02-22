@@ -38,6 +38,7 @@ require_once('function_ssp04.php');
     $game_started = $_SESSION["game_started"] ;
   
 
+   
   //Output to check the current status
 
   frosty_round(
@@ -51,12 +52,8 @@ require_once('function_ssp04.php');
       $guess_image,
       $guess_secretWord
   );
-
-$action= filter_input(INPUT_POST, 'action');
-
-switch ($action) {
- case 'action':{
-     $guess_letter = filter_input(INPUT_POST, 'guess_letter');
+ 
+  $guess_letter = filter_input(INPUT_POST, 'guess_letter');
 
     
      
@@ -66,7 +63,7 @@ switch ($action) {
         $guess_secretWord,
         $guess_letter,
         $guess_tracked,
-        $guess_count,
+        $guess_count,       
         $guess_count_wrong,
         $game_started,
         $game_last_guess,
@@ -74,13 +71,10 @@ switch ($action) {
         $secretWord_array,
         $guess_image
     );
+    echo $guess_letter;
 
-break;
 
- }
-  
-    
-}
+
 
 
 ?>
@@ -119,3 +113,17 @@ width ="137" height ="135">
 </body>
 </html>
 
+<?php
+    $_SESSION["secretWord"] = $secretWord ;
+    $_SESSION["secretWord_hint"] = $secretWord_hint ;
+    $_SESSION["secretWord_array"] = $secretWord_array;
+    $_SESSION["secretWord_len"] = $secretWord_len;
+    $_SESSION["guess_secretWord"] = $guess_secretWord;
+    $_SESSION["guess_count"] = $guess_count ;
+    $_SESSION["guess_count_wrong"] = $guess_count_wrong ;
+    $_SESSION["guess_tracked"] = $guess_tracked;
+    $_SESSION["guess_image"] = $guess_image ;
+    $_SESSION["guess_letter"] = $guess_letter;
+    $_SESSION["game_last_guess"] = $game_last_guess;
+    $_SESSION["game_started"] = $game_started ;
+    ?>

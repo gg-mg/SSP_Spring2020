@@ -43,9 +43,7 @@
          }
      } else {
          echo '<b>Please enter a letter a to z</b>';
-     }
-
- 
+     } 
 
 
      if ($secretWord == $guess_secretWord) {
@@ -63,7 +61,7 @@
 
     
 
-     frosty_round(
+    frosty_round(
          $game_started,
          $game_last_guess,
          $secretWord_len,
@@ -76,6 +74,7 @@
      );
  
  }
+ ;
  function frosty_round(
      $game_started,
      $game_last_guess,
@@ -105,3 +104,4 @@
 
      $frosty = "images/Frosty/SSP04_Frosty1.png";
  }
+ ;

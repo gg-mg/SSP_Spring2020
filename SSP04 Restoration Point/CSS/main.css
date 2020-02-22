@@ -13,7 +13,6 @@ Body: Background-color: #f0f8ff (alice blue)
            1.2 Content: #000 (black)
            1.3 Box-shadow: #008080 (teal)
            1.4 Table highlight: #ffff66(unmellow yellow)
-           1.5 #frosty: #ffff00(yellow)
     2.Header: 
              h1 #008080 (teal)                          
     3.Navigation: 
@@ -29,7 +28,6 @@ Body: Background-color: #f0f8ff (alice blue)
 TYPOGRAPHY
 Body
     1. Main: Georgia, 'Times New Roman', Times, serif
-        1.1 .popup: 3em
     2. Headers: h1- 2.7em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
                 h2- 2.1em Georgia, 'Times New Roman', Times, serif
     3. Navigation Buttons: 1em Georgia, Times, sans-serif                    
@@ -176,14 +174,11 @@ td {
 #frosty{
     border: 3px solid #ffff00;
     max-width: 400px;
-    max-height: 400px;
-    float:right;
+    max-height: 200px;
 } 
 #frostier{
-    padding:0 0 .7em 0;
-    margin-right: 450px;
+    padding: 1em;
 }
-.popup{
-    font-size: 3em;
+#letterGuess{
+    padding : 2em;
 }
-
