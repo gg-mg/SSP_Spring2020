@@ -127,7 +127,7 @@ $guess_letter = filter_input(INPUT_POST, 'guess_letter');
     function frosty_round($game_started, $secretWord_hint, $secretWord_len, $guess_count_wrong, $guess_tracked, $guess_secretWord,
     $guess_image, $guess_letter,$guess_count,$game_last_guess) {
                          
-     echo '<img id = "frosty" src="./images/Frosty/SSP04_Frosty'.$guess_image.'.png"';    
+     echo '<img id = "frosty" src="../images/Frosty/SSP04_Frosty'.$guess_image.'.png"';    
      echo '<p>Correct secret word guess: <b>'. $guess_secretWord .'</b></p>';  
      echo '<p>Guess count:<b>' .$guess_count .'</b></p>';
      echo '<p> Secret word hint:<b>'   . $secretWord_hint .'</b></p>'; 

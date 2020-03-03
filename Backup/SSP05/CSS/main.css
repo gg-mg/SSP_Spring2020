@@ -1,0 +1,189 @@
+/*------------------------------------------------------------------
+[Table of contents]
+Body
+    1.main
+    2. Header /h1, h2 
+    3. Navigation /aside nav, #topnav
+    4. Footer /footer
+ 
+COLORS
+Body: Background-color: #f0f8ff (alice blue)
+    1.Main:
+           1.1 Background: #FFF (white)
+           1.2 Content: #000 (black)
+           1.3 Box-shadow: #008080 (teal)
+           1.4 Table highlight: #ffff66(unmellow yellow)
+           1.5 #frosty: #ffff00(yellow)
+    2.Header: 
+             h1 #008080 (teal)                          
+    3.Navigation: 
+                 3.1 nav ul li a:Background-color: #008000 (green)
+                 3.2 nav ul li a: (standard): #ffffff (white)
+                 3.3 a (visited): #40e0d0 (turquoise)
+                 3.4 a (hover): #FF0000 (red)
+    4.Footer:
+             #008080 (teal)
+    5.Table:
+            border-color #000 (black)
+
+TYPOGRAPHY
+Body
+    1. Main: Georgia, 'Times New Roman', Times, serif
+        1.1 .popup: 3em
+    2. Headers: h1- 2.7em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+                h2- 2.1em Georgia, 'Times New Roman', Times, serif
+    3. Navigation Buttons: 1em Georgia, Times, sans-serif                    
+    4. Footer: .65em  Georgia, 'Times New Roman', Times, serif
+
+Notes: decreasing heading by 0.6em with every subsequent heading level
+-------------------------------------------------------------------*/
+body {
+    background-color: #f0f8ff;
+}
+
+main {
+    min-height: 430px;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: 0px 1px 1px 3px #008080;    
+    margin-left: 280px;
+    margin-right: 50px;
+    color: #000;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #008080;
+    text-align: center;
+    font-size: 2.7em;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 1.6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: 2.1em;
+
+}
+
+h2 {
+    font-size: 2.1em;
+}
+
+
+aside {    
+    float: left;
+    width: 230px;
+    margin-top: 1.2em;
+}
+
+
+aside nav ul li {
+    list-style-type: none;
+   
+
+}
+
+aside nav ul li a {
+    display: block;
+    width: 220px;
+    margin-bottom: .3em;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5em;
+    font-family: Georgia, Times, sans-serif;
+    font-size: 1em;
+    
+
+}
+
+aside a:visited {
+    color: #40e0d0;
+}
+
+aside a:hover {
+    color:fuchsia;
+}
+
+
+footer {
+    color: #008080;
+    text-align: center;
+    padding: .5em;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: .65em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+#topnav a {
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5em;
+    font-family: Georgia, Times, sans-serif;
+    font-size: 1em;
+   
+}
+
+#topnav a:visited {
+    color: #40e0d0;
+}
+
+#topnav a:hover {
+    color: fuchsia;
+}
+
+#topnav li {
+    display: inline;
+    margin-right: 2px;
+    background-color: green;
+   
+}
+
+#topnav {
+    margin-left: 250px;
+}
+
+hr {
+    width: 100%;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-color: black;
+}
+#current{
+    background-color: #ffff66;
+}
+#frosty{
+    border: 3px solid #ffff00;
+    max-width: 400px;
+    max-height: 400px;
+    float:right;
+} 
+#frostier{
+    padding:0 0 .7em 0;
+    margin-right: 450px;
+}
+.popup{
+    font-size: 3em;
+}
+

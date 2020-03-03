@@ -1,0 +1,152 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+Body
+    1.main
+    2. Header /h1
+    3. Navigation /nav li, nav ul, nav ul li, nav ul li a, a:visited, a:hover
+    4. Footer /footer
+ 
+COLORS
+Body: Background-color: #f0f8ff
+    1.Main: 1.1 Background: #fff (white)
+        1.2 Content: #000 (black)
+        1.3 Box-shadow: #008080(teal)
+    2.Header:#008080(teal)
+    3.Navigation: 3.1 nav ul li:Background-color: #008000(green)
+              3.2 nav ul li a: (standard): #ffffff(white)
+              3.3 a (visited): #40e0d0 (turquoise)
+              3.4 a (hover): #00ff00 (fuchasia)
+    4.Footer:#008080(teal)
+
+TYPOGRAPHY
+Body
+    1. Main: Georgia, 'Times New Roman', Times, serif
+    2. Headers: h1- 2.7em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            h2- 2.1em Georgia, 'Times New Roman', Times, serif
+    3. Navigation Buttons: 1em Georgia, Times, sans-serif                    
+    4. Footer: .65em  Georgia, 'Times New Roman', Times, serif
+
+Notes: decreasing heading by 0.6em with every subsequent heading level
+
+Copyright: George Gichuki
+-------------------------------------------------------------------*/
+body {
+    background-color:#f0f8ff ;
+}
+
+main {
+  
+    background: #fff;    
+    border-radius: 10px;   
+    box-shadow: 0px 1px 1px 3px #008080;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    margin-left: 280px;
+    margin-right: 50px;
+    min-height: 430px;    
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+h1 {
+    color: #008080;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.7em;
+    padding-bottom: 0;    
+    padding-left: 1.6em;
+    padding-top: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.1em;
+
+}
+
+h2 {
+    font-size: 2.1em;
+}
+
+
+aside {    
+    float: left;    
+    margin-top: 1.2em;
+    width: 230px;
+}
+
+
+aside nav ul li {
+    list-style-type: none;
+}
+
+aside nav ul li a {
+    background-color: #008000;    
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    font-family: Georgia, Times, sans-serif;
+    font-size: 1em;     
+    margin-bottom: .3em;    
+    padding: .5em;
+    text-decoration: none;
+    width: 220px;
+    
+
+}
+
+aside a:visited {
+    color: #40e0d0;
+}
+
+aside a:hover {
+    color: #ff00ff;
+}
+
+#topnav a {
+    background-color: #008000;
+    border-radius: 5px;
+    color: white;
+    font-family: Georgia, Times, sans-serif;
+    font-size: 1em;    
+    padding: .5em;
+    text-decoration: none;   
+}
+
+#topnav a:visited {
+    color: #40e0d0;
+}
+
+#topnav a:hover {
+    color: #ff00ff;
+}
+
+#topnav li {
+    background-color: #008000;
+    display: inline;
+    margin-right: 2px;  
+   
+}
+
+#topnav {
+    margin-left: 250px;
+}
+
+hr {
+    width: 100%;
+    overflow: auto;
+}
+
+footer {
+    color: #008080;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .65em;    
+    font-style: oblique;
+    font-weight: bold;
+    padding: .5em;
+    padding-left: 1em;    
+    text-align: center;
+}
+
+
