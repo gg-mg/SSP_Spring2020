@@ -6,9 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../../CSS/main1.css"/>
     
 </head>
-<div id = "wrapper">
 <body>
-    
+<div id = "wrapper">
     <main id = "wrap">
     <div>  
     <h1>Account Sign Up</h1>
@@ -68,7 +67,6 @@
 </html>
 
 
-</main>
 
 
 

@@ -1,4 +1,4 @@
-<<?php 
+<?php 
     //set default value of variables for initial page load
    
     if (!isset($years)) { $years = '5'; } 
