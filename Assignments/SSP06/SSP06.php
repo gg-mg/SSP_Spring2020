@@ -7,8 +7,8 @@
 <!-- main -->
 <main> 
     <ul>     
-        <li><a href="SSP06_21_2/index.php">Account Sign Up</a></li>
-        <li><a href="SSP07_23_1/index.php">Future Value Calculator</a></li>
+        <li><a href="SSP06_21_2/index.php">Secure Login Exercise</a></li>
+        <li><a href="SSP06_23_1/index.php">Upload File</a></li>
     </ul>
 </main>
 

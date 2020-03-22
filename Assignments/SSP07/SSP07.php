@@ -10,8 +10,8 @@
 <!-- main -->
 <main> 
     <ul>     
-        <li><a href="SSP07_01/index.php">Account Sign Up</a></li>
-        <li><a href="SSP07_02/index.php">Future Value Calculator</a></li>
+        <li><a href="SSP07_01/index.php">Task List Manager</a></li>
+        <li><a href="SSP07_02/index.php">Register for an Account</a></li>
     </ul>
 </main>
 
