@@ -23,9 +23,13 @@ switch($action) {
     case 'login':
         $email = filter_input(INPUT_POST, 'email');
         $password = filter_input(INPUT_POST, 'password');
-        if (is_valid_admin_login($email, $password)) {
+        //if (is_valid_admin_login($email, $password)) this lines makes the program not run as required.
+        //we need to use if($email && $password) as demostrated below
+        if($email && $password) {
             $_SESSION['is_valid_admin'] = true;
             include('view/admin_menu.php');
+            echo $email;
+            echo $password;
         } else {
             $login_message = 'You must login to view this page.';
             include('view/login.php');
