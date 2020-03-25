@@ -190,3 +190,13 @@ td {
 #display_results{
     display : none;
 }
+.phpQuery{
+    
+    width: 1350px;
+    margin-left: 280px;
+    margin-right: 10px; 
+    padding-right: 30px;  
+}
+.lineUnder{
+    width: 127%
+}
